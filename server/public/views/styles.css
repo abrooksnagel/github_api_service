@@ -1,0 +1,12 @@
+body {
+    background-color: orange;
+}
+
+h1 {
+    padding: 15px;
+    text-align: center;
+}
+
+.well {
+    background-color: darkorange;
+}
