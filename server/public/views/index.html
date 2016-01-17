@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Github API Service</title>
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+</head>
+<body ng-controller="MainController">
+    <h1>Check out my Gits</h1>
+
+    <div class="well col-md-6" ng-repeat="datum in gitStuff.results.data">
+        <p>{{datum.repo.name}}</p>
+        <p><a href="https://github.com/{{datum.repo.name}}">https://github.com/{{datum.repo.name}}</a></p>
+    </div>
+
+</body>
+</html>
